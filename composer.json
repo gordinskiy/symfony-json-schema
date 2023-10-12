@@ -1,0 +1,40 @@
+{
+    "name": "gordinskiy/symfony-json-schema",
+    "description": "Generate JSON Schema from Symfony constraints",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "json",
+        "schema",
+        "symfony"
+    ],
+    "authors": [
+        {
+            "name": "Dmitriy Gordinskiy",
+            "email": "dmitriy.gordinskiy94@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "gordinskiy/json-schema": "^0.0.4",
+        "symfony/validator": "^6.3"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.39",
+        "friendsofphp/php-cs-fixer": "^3.34",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^10.4",
+        "vimeo/psalm": "^5.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gordinskiy\\SymfonyJsonSchema\\": "src/",
+            "Gordinskiy\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true
+        }
+    }
+}
